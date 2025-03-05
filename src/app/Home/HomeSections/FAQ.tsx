@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface FAQ {
   question: string;
@@ -54,11 +55,21 @@ const FAQComponent: React.FC = () => {
 
   return (
     <div className="px-6 py-10 bg-white max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">
-        Frequently asked questions (FAQs)
-      </h2>
-      <div className="h-1 w-full max-w-xs bg-gradient-to-r from-cyan-400 to-cyan-200 mb-10"></div>
-
+      {/* Section heading */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Frequently Asked Questions
+        </h2>
+        <div className="h-1 w-24 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full mx-auto mb-6"></div>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Find answers to the most common questions about our product.
+        </p>
+      </motion.div>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border rounded-lg overflow-hidden">

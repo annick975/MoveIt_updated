@@ -223,12 +223,9 @@ const PricingPlans = () => {
           >
             Pricing Plans
           </motion.h2>
-          <motion.div
-            className="h-1 w-20 md:w-32 bg-teal-400 mt-2 mx-auto"
-            initial={{ width: 0 }}
-            animate={{ width: "8rem" }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          />
+
+          <div className="h-1 w-24 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full mx-auto mt-2 mb-6"></div>
+
           <motion.p
             className="text-gray-600 mt-4 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
@@ -267,7 +264,7 @@ const PricingPlans = () => {
             whileTap={{ scale: 0.95 }}
           >
             <motion.div
-              className="absolute top-1 w-5 h-5 bg-teal-400 rounded-full"
+              className="absolute top-1 w-5 h-5 bg-[#40b8a6] rounded-full"
               animate={{
                 translateX: billingPeriod === "annually" ? 28 : 0,
               }}
@@ -308,7 +305,7 @@ const PricingPlans = () => {
               key={index}
               className={`relative rounded-2xl p-8 ${
                 plan.popular
-                  ? "bg-white border-2 border-teal-400 shadow-xl"
+                  ? "bg-white border-2 border-[#40b8a6] shadow-xl"
                   : "bg-white border border-gray-100 shadow-lg"
               }`}
               variants={planVariants}
@@ -321,7 +318,7 @@ const PricingPlans = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5 }}
                 >
-                  <div className="bg-teal-400 text-white text-sm px-4 py-1 mt-4 rounded-full flex items-center shadow-md">
+                  <div className="bg-[#40b8a6] text-white text-sm px-4 py-1 mt-4 rounded-full flex items-center shadow-md">
                     <Sparkles size={14} className="mr-1" /> Popular
                   </div>
                 </motion.div>
@@ -364,7 +361,7 @@ const PricingPlans = () => {
                     variants={featureVariants}
                   >
                     <motion.div
-                      className="flex-shrink-0 h-6 w-6 rounded-full bg-teal-400 flex items-center justify-center mt-0.5"
+                      className="flex-shrink-0 h-6 w-6 rounded-full bg-[#40b8a6] flex items-center justify-center mt-0.5"
                       variants={checkmarkVariants}
                     >
                       <Check size={16} className="text-white" />
@@ -378,8 +375,8 @@ const PricingPlans = () => {
                 className={`w-full py-3 rounded-lg 
                   ${
                     plan.popular
-                      ? "bg-teal-400 hover:bg-teal-500 text-white"
-                      : "bg-teal-50 hover:bg-teal-100 text-teal-600 border border-teal-200"
+                      ? "bg-[#40b8a6] hover:bg-[#359e8d] text-white"
+                      : "bg-transparent text-[#40b8a6] border-2 border-[#40b8a6] hover:bg-[#e7f9f6] transition-colors"
                   } 
                   font-medium transition-colors shadow-sm`}
                 variants={buttonVariants}

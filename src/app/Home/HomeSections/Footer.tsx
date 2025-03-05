@@ -171,10 +171,10 @@ const Footer: React.FC = () => {
             <span className="text-[#40b8a6] font-medium mx-1">MoveIt</span>
             <span className="ml-1">· Made with</span>
             <Heart
-              className="w-3 h-3 mx-1 text-red-500 inline"
+              className="w-4 h-4 mx-1 text-[#40b8a6] inline"
               fill="currentColor"
             />
-            <span>worldwide</span>
+            <span>by Annick</span>
           </p>
         </div>
       </div>
