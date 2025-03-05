@@ -3,7 +3,6 @@ import {
   Twitter,
   Facebook,
   Instagram,
-  ExternalLink,
   Send,
   Mail,
   Heart,

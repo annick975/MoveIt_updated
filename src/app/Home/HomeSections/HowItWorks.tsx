@@ -6,7 +6,6 @@ import {
   FolderKanban,
   Bell,
   Users,
-  ArrowRight,
 } from "lucide-react";
 
 const HowItWorks: React.FC = () => {

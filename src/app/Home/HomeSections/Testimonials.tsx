@@ -92,16 +92,6 @@ const TestimonialsSection = () => {
     },
   };
 
-  const backgroundCircleVariants = {
-    hidden: { scale: 0 },
-    visible: {
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
 
   return (
     <section className="w-full max-w-6xl mx-auto px-14 py-12 relative overflow-hidden bg-gradient-to-br from-white to-teal-50">
