@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-[#05D6B5]">
-                Move<span className="italic text-cyan-400">It</span>
+              <span className="text-2xl font-bold text-[#40b8a6]">
+                Move<span className="italic text-cyan-500">It</span>
               </span>
             </div>
             <p className="text-gray-600 text-sm">
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               modern workflows.
             </p>
             <div className="pt-2">
-              <button className="bg-[#05D6B5] hover:bg-[#40b8a6] text-white px-4 py-2 rounded-md text-sm flex items-center space-x-2 transition-colors duration-300">
+              <button className="bg-[#40b8a6] hover:bg-[#2e9182] text-white px-4 py-2 rounded-md text-sm flex items-center space-x-2 transition-colors duration-300">
                 <Send className="w-4 h-4" />
                 <span>Contact Us</span>
               </button>
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
                 className="flex-grow px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-1 focus:ring-[#40b8a6] text-sm"
                 placeholder="Your email address"
               />
-              <button className="bg-[#05D6B5] hover:bg-[#40b8a6] text-white px-3 py-2 rounded-r-md transition-colors duration-300">
+              <button className="bg-[#40b8a6] hover:bg-[#2e9182] text-white px-3 py-2 rounded-r-md transition-colors duration-300">
                 <Mail className="w-4 h-4" />
               </button>
             </div>
@@ -171,7 +171,7 @@ const Footer: React.FC = () => {
             <span className="text-[#40b8a6] font-medium mx-1">MoveIt</span>
             <span className="ml-1">· Made with</span>
             <Heart
-              className="w-4 h-4 mx-1 text-[#40b8a6] inline"
+              className="w-4 h-4  mx-1 text-[#40b8a6] inline"
               fill="currentColor"
             />
             <span>by Annick</span>
