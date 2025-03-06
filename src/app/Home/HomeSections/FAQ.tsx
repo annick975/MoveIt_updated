@@ -54,7 +54,7 @@ const FAQComponent: React.FC = () => {
   ];
 
   return (
-    <div className="px-6 py-10 bg-white max-w-4xl mx-auto">
+    <div id="faq" className="px-6 py-10 bg-white max-w-4xl mx-auto">
       {/* Section heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -91,7 +91,7 @@ const KeyFeatures: React.FC = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-white relative overflow-hidden">
+    <section id="features" className="py-20 px-4 bg-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-emerald-100/50 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/4 opacity-60"></div>

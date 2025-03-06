@@ -148,7 +148,10 @@ const PricingPlans = () => {
   };
 
   return (
-    <div className="w-full relative overflow-hidden bg-gradient-to-b from-teal-50 to-[#F0FFFD] py-16 px-4">
+    <div
+      id="pricing"
+      className="w-full relative overflow-hidden bg-gradient-to-b from-teal-50 to-[#F0FFFD] py-16 px-4"
+    >
       {/* Background elements */}
       <motion.div
         className="absolute top-20 right-0 w-64 h-64 rounded-full bg-teal-100 opacity-40 -z-10"

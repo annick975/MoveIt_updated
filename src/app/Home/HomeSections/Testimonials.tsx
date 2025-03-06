@@ -1,6 +1,7 @@
 import React from "react";
 import { Quote } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Testimonial {
   id: number;
@@ -8,6 +9,7 @@ interface Testimonial {
   role: string;
   quote: string;
   rating: number;
+  image: string; // New property for profile image
 }
 
 const TestimonialsSection = () => {
@@ -19,6 +21,7 @@ const TestimonialsSection = () => {
       quote:
         "MoveIt has completely transformed how I manage my daily tasks. Simple, fast, and effective!",
       rating: 5,
+      image: "/pp1.png",
     },
     {
       id: 2,
@@ -27,6 +30,7 @@ const TestimonialsSection = () => {
       quote:
         "With MoveIt, my team stays on top of deadlines like never before. Game changer!",
       rating: 5,
+      image: "/pp2.png",
     },
     {
       id: 3,
@@ -35,6 +39,7 @@ const TestimonialsSection = () => {
       quote:
         "I used to struggle with organizing my work, but MoveIt makes it effortless. Highly recommend!",
       rating: 5,
+      image: "/pp2.png", 
     },
     {
       id: 4,
@@ -43,6 +48,7 @@ const TestimonialsSection = () => {
       quote:
         "Finally, a task manager that's easy to use and actually helps me stay productive!",
       rating: 5,
+      image: "/pp1.png", 
     },
   ];
 
@@ -92,10 +98,24 @@ const TestimonialsSection = () => {
     },
   };
 
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        damping: 15,
+      },
+    },
+  };
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-14 py-12 relative overflow-hidden bg-gradient-to-br from-white to-teal-50">
-      
+    <section
+      id="testimonials"
+      className="w-full max-w-6xl mx-auto px-14 py-12 relative overflow-hidden bg-gradient-to-br from-white to-teal-50"
+    >
       {/* Section heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -152,9 +172,16 @@ const TestimonialsSection = () => {
                   {testimonial.quote}
                 </motion.p>
                 <div className="flex items-center">
-                  <div className="mr-3 h-12 w-12 overflow-hidden rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white font-bold shadow-md">
-                    {testimonial.name.charAt(0)}
-                  </div>
+                  <motion.div
+                    className="mr-3 h-12 w-12 overflow-hidden rounded-full shadow-md"
+                    variants={imageVariants}
+                  >
+                    <img
+                      src={testimonial.image}
+                      alt={`${testimonial.name}'s profile`}
+                      className="h-full w-full object-cover"
+                    />
+                  </motion.div>
                   <div>
                     <p className="font-semibold text-teal-800">
                       {testimonial.name}
@@ -205,9 +232,16 @@ const TestimonialsSection = () => {
                   {testimonial.quote}
                 </motion.p>
                 <div className="flex items-center">
-                  <div className="mr-3 h-12 w-12 overflow-hidden rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white font-bold shadow-md">
-                    {testimonial.name.charAt(0)}
-                  </div>
+                  <motion.div
+                    className="mr-3 h-12 w-12 overflow-hidden rounded-full shadow-md"
+                    variants={imageVariants}
+                  >
+                    <img
+                      src={testimonial.image}
+                      alt={`${testimonial.name}'s profile`}
+                      className="h-full w-full object-cover"
+                    />
+                  </motion.div>
                   <div>
                     <p className="font-semibold text-teal-800">
                       {testimonial.name}

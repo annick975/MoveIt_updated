@@ -8,6 +8,14 @@ const HeroSection: React.FC = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
+  // Array of avatar images for both mobile and desktop social proof sections
+  const userAvatars = [
+    "/pp1.png",
+    "/pp2.png",
+    "/pp1.png", 
+    "/pp2.png",
+  ];
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -29,7 +37,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-[#F0FFFD]  to-[#edfbfa] py-16 sm:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden min-h-[700px]">
+    <section id="home" className="relative bg-gradient-to-br from-[#F0FFFD]  to-[#edfbfa] py-16 sm:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden min-h-[700px]">
       {/* Decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <motion.div
@@ -146,20 +154,24 @@ const HeroSection: React.FC = () => {
               </Link>
             </motion.div>
 
-            {/* Social proof - visible on mobile */}
+            {/* Social proof with images - visible on mobile */}
             <motion.div
               variants={itemVariants}
               className="flex items-center gap-2 mt-8 lg:hidden"
             >
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
+                {userAvatars.map((avatar, i) => (
                   <div
                     key={i}
-                    className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center overflow-hidden"
+                    className="w-8 h-8 rounded-full border-2 border-white overflow-hidden"
                   >
-                    <span className="text-xs text-gray-600 font-medium">
-                      {String.fromCharCode(64 + i)}
-                    </span>
+                    <Image
+                      src={avatar}
+                      alt={`User ${i + 1}`}
+                      width={32}
+                      height={32}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 ))}
               </div>
@@ -303,7 +315,7 @@ const HeroSection: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Bottom social proof - visible on desktop */}
+        {/* Bottom social proof with images - visible on desktop */}
         <motion.div
           variants={itemVariants}
           initial={{ opacity: 0, y: 20 }}
@@ -313,14 +325,18 @@ const HeroSection: React.FC = () => {
         >
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
+              {userAvatars.map((avatar, i) => (
                 <div
                   key={i}
-                  className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center overflow-hidden"
+                  className="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
                 >
-                  <span className="text-xs text-gray-600 font-medium">
-                    {String.fromCharCode(64 + i)}
-                  </span>
+                  <Image
+                    src={avatar}
+                    alt={`User ${i + 1}`}
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               ))}
             </div>

@@ -41,7 +41,10 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-[#F0FFFD] to-emerald-50 py-20 px-4 overflow-hidden">
+    <section
+      id="how-it-works"
+      className="relative bg-gradient-to-b from-[#F0FFFD] to-emerald-50 py-20 px-4 overflow-hidden"
+    >
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -150,12 +153,10 @@ const HowItWorks: React.FC = () => {
                     </motion.div>
                   ))}
                 </div>
-            
               </div>
             </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
