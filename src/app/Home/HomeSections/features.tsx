@@ -6,6 +6,7 @@ import {
   LineChart,
   Shield,
   Check,
+  CalendarSync
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -56,6 +57,16 @@ const KeyFeatures: React.FC = () => {
         "End-to-end encryption",
         "GDPR compliant",
         "Two-factor authentication",
+      ],
+    },
+    {
+      icon: <CalendarSync className="w-6 h-6 text-emerald-600" />,
+      title: "Real-time Sync",
+      description: "Stay updated across all your devices.",
+      benefits: [
+        "Instant updates on all platforms",
+        "Seamless cloud synchronization",
+        "Offline access with automatic sync",
       ],
     },
   ];
