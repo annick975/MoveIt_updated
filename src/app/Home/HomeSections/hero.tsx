@@ -37,7 +37,10 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-[#F0FFFD]  to-[#edfbfa] py-16 sm:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden min-h-[700px]">
+    <section
+      id="home"
+      className="relative bg-gradient-to-br from-[#F0FFFD]  to-[#edfbfa] py-16 sm:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden min-h-[700px]"
+    >
       {/* Decorative elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <motion.div
@@ -128,7 +131,7 @@ const HeroSection: React.FC = () => {
               className="pt-6 md:pt-8 flex flex-wrap gap-4"
             >
               <Link
-                href="/get-started"
+                href="/Auth/Signup"
                 className="inline-flex items-center bg-[#40b8a6] text-white px-8 py-4 rounded-full font-medium text-lg shadow-lg shadow-[#9DD9D0]/30 hover:bg-[#359e8d] hover:shadow-[#9DD9D0]/40 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Get Started

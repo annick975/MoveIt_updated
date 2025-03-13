@@ -92,13 +92,13 @@ const Header: React.FC = () => {
         {/* Auth buttons with spacing */}
         <div className="flex items-center space-x-4">
           <Link
-            href="/login"
+            href="/Auth/Login"
             className="bg-[#40b8a6] text-white px-4 py-2 rounded-full font-medium border-2 border-[#40b8a6] hover:bg-[#359e8d] hover:shadow-[#9DD9D0]/40 transition-colors"
           >
             Log in
           </Link>
           <Link
-            href="/signup"
+            href="/Auth/Signup"
             className="bg-transparent text-[#40b8a6] px-4 py-2 rounded-full font-medium border-2 border-[#40b8a6] hover:bg-[#e7f9f6] transition-colors"
           >
             Sign up
@@ -164,7 +164,7 @@ const Header: React.FC = () => {
                 Log in
               </Link>
               <Link
-                href="/signup"
+                href="/Auth/Signup"
                 className="bg-transparent text-[#40b8a6] px-4 py-2 rounded-full font-medium border-2 border-[#40b8a6] hover:bg-[#e7f9f6] text-center"
                 onClick={closeMenu}
               >

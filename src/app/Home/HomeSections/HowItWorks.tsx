@@ -7,6 +7,7 @@ import {
   Bell,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 
 const HowItWorks: React.FC = () => {
   const features = [
@@ -122,13 +123,16 @@ const HowItWorks: React.FC = () => {
                 productivity with MoveIt.
               </p>
               <div className="flex flex-wrap gap-3">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-white text-emerald-600 hover:text-emerald-700 font-semibold py-2 px-6 rounded-lg shadow-md transition-colors duration-200"
-                >
-                  Get Started
-                </motion.button>
+                <Link href="/Auth/Signup">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-white text-emerald-600 hover:text-emerald-700 font-semibold py-2 px-6 rounded-lg shadow-md transition-colors duration-200"
+                  >
+                    Get Started
+                  </motion.button>
+                </Link>
+
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

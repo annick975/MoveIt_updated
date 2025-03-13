@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Check, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface PricingFeature {
   text: string;
@@ -373,21 +374,23 @@ const PricingPlans = () => {
                   </motion.li>
                 ))}
               </ul>
-
-              <motion.button
-                className={`w-full py-3 rounded-lg 
+              <Link href="/Auth/Signup">
+                {" "}
+                <motion.button
+                  className={`w-full py-3 rounded-lg 
                   ${
                     plan.popular
                       ? "bg-[#40b8a6] hover:bg-[#359e8d] text-white"
                       : "bg-transparent text-[#40b8a6] border-2 border-[#40b8a6] hover:bg-[#e7f9f6] transition-colors"
                   } 
                   font-medium transition-colors shadow-sm`}
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="tap"
-              >
-                {plan.buttonText}
-              </motion.button>
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  whileTap="tap"
+                >
+                  {plan.buttonText}
+                </motion.button>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

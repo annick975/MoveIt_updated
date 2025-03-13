@@ -1,14 +1,15 @@
 import React from "react";
 import {
   ClipboardList,
-  Bell,
+  BellRing,
   Users,
   LineChart,
-  Shield,
+  ShieldCheck,
   Check,
   CalendarSync
 } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const KeyFeatures: React.FC = () => {
   // Enhanced feature data with Lucide React icons and added benefits
@@ -24,7 +25,7 @@ const KeyFeatures: React.FC = () => {
       ],
     },
     {
-      icon: <Bell className="w-6 h-6 text-cyan-600" />,
+      icon: <BellRing className="w-6 h-6 text-cyan-600" />,
       title: "Deadline Reminders",
       description: "Never miss a deadline with automated alerts",
       benefits: [
@@ -50,7 +51,7 @@ const KeyFeatures: React.FC = () => {
       benefits: ["Custom dashboards", "Export reports", "Trend analysis"],
     },
     {
-      icon: <Shield className="w-6 h-6 text-emerald-600" />,
+      icon: <ShieldCheck className="w-6 h-6 text-emerald-600" />,
       title: "Secure & Private",
       description: "Your data is encrypted and safe",
       benefits: [
@@ -102,7 +103,10 @@ const KeyFeatures: React.FC = () => {
   };
 
   return (
-    <section id="features" className="py-20 px-4 bg-white relative overflow-hidden">
+    <section
+      id="features"
+      className="py-20 px-4 bg-white relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-emerald-100/50 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/4 opacity-60"></div>
@@ -239,13 +243,17 @@ const KeyFeatures: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Explore All Features
-          </motion.button>
+          <Link href="Auth/Signup">
+            {" "}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Explore All Features
+            </motion.button>
+          </Link>
+
           <p className="text-gray-500 mt-4 text-sm">
             14-day free trial. No credit card required.
           </p>
