@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Quote } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -176,10 +177,12 @@ const TestimonialsSection = () => {
                     className="mr-3 h-12 w-12 overflow-hidden rounded-full shadow-md"
                     variants={imageVariants}
                   >
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={`${testimonial.name}'s profile`}
-                      className="h-full w-full object-cover"
+                      width={48}
+                      height={48}
+                      className="object-cover"
                     />
                   </motion.div>
                   <div>
@@ -236,10 +239,12 @@ const TestimonialsSection = () => {
                     className="mr-3 h-12 w-12 overflow-hidden rounded-full shadow-md"
                     variants={imageVariants}
                   >
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={`${testimonial.name}'s profile`}
-                      className="h-full w-full object-cover"
+                      width={48}
+                      height={48}
+                      className="object-cover"
                     />
                   </motion.div>
                   <div>

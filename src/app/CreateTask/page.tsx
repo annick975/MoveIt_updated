@@ -19,7 +19,7 @@ import {
   Underline,
   List,
   ListOrdered,
-  Image,
+  
   Link,
   Calendar as CalendarIcon,
 } from "lucide-react";
@@ -183,7 +183,7 @@ export default function NewTaskPage() {
                       type="button"
                       className="p-1 hover:bg-gray-200 rounded"
                     >
-                      <Image size={16} className="text-gray-500" />
+                
                     </button>
                     <button
                       type="button"

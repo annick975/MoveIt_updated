@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Header from '@/components/header';
 
 // Mock data for the dashboard
 const mockTasks = [
@@ -92,7 +91,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F0FFFD] to-[#edfbfa]">
-      <Header />
+        
       
       <div className="pt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -106,7 +105,7 @@ const Dashboard: React.FC = () => {
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
               Welcome back, <span className="text-[#40b8a6]">Sarah!</span>
             </h1>
-            <p className="text-gray-600">Here's what your AI assistant has planned for you today</p>
+            <p className="text-gray-600">Here&apos;s what your AI assistant has planned for you today</p>
           </motion.div>
 
           {/* Stats Cards */}
