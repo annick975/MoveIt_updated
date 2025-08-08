@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "createTask": "Create Task",
+    "pomodoroTimer": "Pomodoro Timer"
+  },
+  "common": {
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "createNew": "Create New Task",
+    "noTasks": "No tasks found",
+    "completed": "Completed",
+    "pending": "Pending",
+    "inProgress": "In Progress"
+  },
+  "pomodoro": {
+    "title": "Pomodoro Timer",
+    "start": "Start",
+    "pause": "Pause",
+    "reset": "Reset",
+    "workSession": "Work Session",
+    "breakTime": "Break Time",
+    "longBreak": "Long Break"
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "subtitle": "Discover how MoveIt has transformed productivity for thousands of users"
+  },
+  "language": {
+    "switchLanguage": "Switch Language",
+    "english": "English",
+    "french": "French",
+    "kinyarwanda": "Kinyarwanda"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "Ahabanza",
+    "dashboard": "Ibikubiye",
+    "createTask": "Kurema Umurimo",
+    "pomodoroTimer": "Isaha ya Pomodoro"
+  },
+  "common": {
+    "welcome": "Murakaza neza",
+    "loading": "Biratangura...",
+    "save": "Bika",
+    "cancel": "Hagarika",
+    "delete": "Siba",
+    "edit": "Hindura",
+    "submit": "Ohereza",
+    "back": "Subira",
+    "next": "Komeza",
+    "previous": "Ibanjirije",
+    "search": "Shakisha",
+    "filter": "Shungura",
+    "sort": "Shirisha"
+  },
+  "tasks": {
+    "title": "Imirimo",
+    "createNew": "Kurema Umurimo Mushya",
+    "noTasks": "Nta murimo ubonetse",
+    "completed": "Byarangiye",
+    "pending": "Bitegereje",
+    "inProgress": "Biragenda"
+  },
+  "pomodoro": {
+    "title": "Isaha ya Pomodoro",
+    "start": "Tangira",
+    "pause": "Hagarika",
+    "reset": "Ongera utangire",
+    "workSession": "Igihe cy'akazi",
+    "breakTime": "Igihe cyo kuruhuka",
+    "longBreak": "Kuruhuka kwinshi"
+  },
+  "testimonials": {
+    "title": "Icyo Abakoresha bacu bavuga",
+    "subtitle": "Menya uko MoveIt yahinduye umusaruro w'abantu ibihumbi"
+  },
+  "language": {
+    "switchLanguage": "Hindura Ururimi",
+    "english": "Icyongereza",
+    "french": "Igifaransa",
+    "kinyarwanda": "Ikinyarwanda"
+  }
+}
